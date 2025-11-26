@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    background-color: #ffffff;
+    border-bottom: solid 2px;
+}
+nav ul{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+nav ul li h2{
+    font-family: "Playfair Display", serif;
+}
+
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a{
+ text-decoration: none;
+ color: #000000;
+ font-family: "Roboto Slab", serif;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+main p{
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+#containerfeed{
+    max-width: 900px;
+    height: 60vh;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.formss{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.grupofeed{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    height: 20vh;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.botões{
+    width: 4vw;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.containerb{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #dbaac3;
+    height: 5vh;
+    margin-top: 230px;
+    text-align: center;
+    font-weight: bold;
+    border-top: dashed 2px;
+}
+
+
+@media screen and (max-width:768px){
+    nav ul{
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    nav ul h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    #containerfeed{
+        max-width: 95%;
+        width: 95%;
+        margin: 20px auto;
+        margin-top: 50px;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    .containerb{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botões{
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    footer{
+        margin-top: 300px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+   
+}

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+header{
+    background-color: #ffffff;
+    border-bottom: solid 2px;
+
+    width: 100%;
+}
+nav ul{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+nav ul li h2{
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+}
+
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a{
+ text-decoration: none;
+ color: #000000;
+ font-family: "Roboto Slab", serif;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.titulo{
+    display: flex;
+    align-items: flex-end;
+    width: 35vw;
+    height: 15vh;
+    gap: 10px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.titulo p{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 400px;
+    background-color:rgb(0, 0, 0);
+    margin-top: 100px;
+    border: solid 4px #ffd6ed;
+}
+
+.section1 img{
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.section1 figcaption{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 400px;
+    background-color:rgb(226, 180, 203);
+    margin-top: 100px;
+    border: solid 4px #000000;
+}
+.section2 img{
+    box-shadow: 0px 0px 20px #000000;
+}
+
+
+.section2 figcaption{
+    font-size: 18px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 350px;
+    background-color:rgb(0, 0, 0);
+    margin-top: 100px;
+    border: solid 4px #ffd6ed;
+}
+
+.section3 img{
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.section3 figcaption{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+}
+
+
+footer{
+    width: 100%;
+    margin-top: 200px;
+    background-color: rgb(253, 211, 233);
+    height: 5vh;
+    text-align: center;
+    border-top: dashed 2px;
+    font-weight: bold;
+    
+}
+
+
+img:hover{
+    opacity: 0.9;
+}
+
+img:active{
+    opacity: 0.2;
+}
+
+@media screen and (max-width:768px){
+   .titulo{
+    display: block;
+    width: 100%;
+    gap: 10px;
+   }
+
+   .titulo h1{
+    font-size: 32px;
+    text-align: center;
+   }
+
+   .titulo {
+    font-size: 25px;
+    text-align: center;
+   }
+
+   nav ul{
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+   }
+
+   nav ul li{
+    width: 100%;
+    text-align: center;
+   }
+
+   .section1, .section2, .section3{
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    border-width: 2px;
+   }
+   
+   .section1 img, .section2 img, .section3 img{
+    box-shadow: 0px 0px 10px #000000;
+    max-width: 100%;
+    height: auto;
+   }
+
+   .section1 figcaption, .section2 figcaption, .section3 figcaption{
+    font-size: 14px;
+    padding: 5px;
+   }
+
+   .section2 figcaption{
+    font-size: 16px;
+   }
+
+   footer{
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+   }
+   
+
+}
